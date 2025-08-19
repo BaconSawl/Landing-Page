@@ -89,3 +89,28 @@ body{
     width: 200px;
     height: 200px;
 }
+
+/* Layer 3 */
+.layer3{
+    background-color: #E5E7EB;
+}
+
+.layer3-wrapper{
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 0;
+}
+
+.quote{
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author {
+    text-align: right;
+    font-size: 24px;
+    padding-right: 5px;
+    font-weight: 600;
+}
