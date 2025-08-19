@@ -16,17 +16,9 @@ body{
 }
 
 /* Header */
-
 .header {
-    /* Fixed navbar */
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     justify-content: space-between;
-    /* */
-    
     padding: 5px 40px;
     background-color: rgba(253,170,180,255);
 }
@@ -42,7 +34,7 @@ body{
 }
 
 .logo {
-    height: 48px;
+    height: 52px;
     width: auto; /* Maintain aspect ratio */
 }
 
@@ -60,33 +52,40 @@ body{
 }
 
 /* Layer1 */
-
-.layer1-container {
-    height: 500px;
+.layer1-container{
     display: flex;
-    padding: 0 64px;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    background-color: #1F2937;
+    padding: 40px 260px;
+    gap: 36px;
 }
 
-.layer1Left {
-    width: 50%;
-    color: white;
+/* Layer 2 */
+.layer2{
+    background-color: pink;
+    padding: 4rem 0;
+}
+.layer2-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.layer2 h1{
+    text-align: center;
+}
+.cards-block {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-content: center;
-}
-
-.layer1Right {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    gap: 4rem;
+    margin-top: 5rem;
 }
 
-.layer1Image{
-    width: 100%;
+.card {
+    max-width: 200px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
 }
