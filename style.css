@@ -5,15 +5,6 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-.btn {
-    color: white;
-    padding: 8px;
-    width: 150px;
-    background-color: #3882F6;
-    border-radius: 8px;
-    font-weight: 900;
-    font-size: 1.125em;
-}
 
 /* Header */
 .header {
@@ -58,6 +49,17 @@ body{
     align-items: center;
     padding: 40px 260px;
     gap: 36px;
+}
+
+
+.btn {
+    color: white;
+    padding: 8px;
+    width: 150px;
+    background-color: #3882F6;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 1.125em;
 }
 
 /* Layer 2 */
@@ -117,7 +119,7 @@ body{
 
 /* Layer 4 */
 .layer4{
-    padding: 4rem 0;
+    padding: 90px 0;
 }
 
 .layer4-wrapper {
@@ -151,4 +153,11 @@ body{
     font-size: 24px;
     font-weight: 600;
 
+}
+
+.footer{
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
+    padding: 24px;
 }
