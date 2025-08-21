@@ -43,26 +43,79 @@ body{
 }
 
 /* Layer1 */
+.layer1{
+  background-image: linear-gradient(
+    -45deg, #d14172 25%, #fff3d9 25%,
+    #fff3d9 50%, #d14172 50%,
+    #d14172 75%, #fff3d9 75%
+  );
+
+  padding: 40px;
+}
+
+
 .layer1-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
+    /* This make the element centered, especially when zoom out on browser */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 260px;
-    gap: 36px;
+
+    background-color: rgba(255, 255, 255, 0.65);
+    color: #ffffff;
+
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.layer1-container p{
+    color:  #ffffff;
+    line-height: 1.6;
+    font-style: italic;
+    font-weight: bold;
+    max-width: 500px;
+    -webkit-text-stroke: 3px #b84776;
+    paint-order: stroke fill ;
+}
+
+.layer1-container h1{
+    font-size: 54px;
+    -webkit-text-stroke: 5px #b84776;
+    paint-order: stroke fill ;
+    
+}
+
+.layer1Right img {
+    width: 512px;
+    height: auto;
 }
 
 
 .btn {
-    color: white;
+    color: #ff5ea2;
     padding: 8px;
     width: 150px;
-    background-color: #3882F6;
-    border-radius: 8px;
-    font-weight: 900;
+    background: linear-gradient(145deg,#ffd1ec, #ffe6f5);
+
+    border-radius: 16px;
+    font-weight: bold;
     font-size: 1.125em;
+    border-color: #ce446d;
+
+
+    transition: all 0.25s cubic-bezier(0.03, 0.59, 0.3, 1);;
 }
+
+.btn:hover{
+    color: white;
+    background: rgba(253,170,180,255);
+    box-shadow: 0 0px 2px 0 #f8a1c4, 0 1px 2px 0 #f8a1c4;
+    transform: scale(1.25);
+    border: 3px solid white;
+}
+
 
 /* Layer 2 */
 .layer2{
