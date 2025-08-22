@@ -129,7 +129,15 @@ body{
 
 .layer2 h1{
     text-align: center;
+    color:  #ffffff;
+    font-style: italic;
+    font-weight: bold;
+    -webkit-text-stroke: 3px #b84776;
+    paint-order: stroke fill ;
+
+    white-space: pre-line;
 }
+
 .cards-block {
     display: flex;
     justify-content: center;
@@ -142,10 +150,44 @@ body{
     max-width: 200px;
 }
 
+
 .card img{
     width: 200px;
     height: 200px;
+    border-radius: 16px;
+    border: 10px double #ff5ea2;
+    box-shadow: 0 10px 30px black;
+    transition: 0.3s;
+    margin: -0.5em -1em -1em -1em;
+
+    mask: linear-gradient(-60deg, #000 50%, #0005, #000 70%) right/500% 100%;
+    animation: shimmer 3s infinite;
 }
+
+
+@keyframes shimmer {
+  100% {
+    mask-position: left
+  }
+}
+
+.card:hover img {
+    transform: translateY(-20px);
+}
+
+
+.card p{
+    text-align: center;
+    color:  #ffffff;
+    line-height: 1.6;
+    font-weight: bold;
+    max-width: 500px;
+    -webkit-text-stroke: 3px #b84776;
+    paint-order: stroke fill ;
+
+}
+
+
 
 /* Layer 3 */
 .layer3{
@@ -163,6 +205,7 @@ body{
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
+    white-space: pre-line;
 }
 
 .author {
