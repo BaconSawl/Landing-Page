@@ -192,13 +192,13 @@ body{
 /* Layer 3 */
 .layer3{
     background-color: #E5E7EB;
+    background: radial-gradient(circle at top, #ffe6f2, #ffd6eb, #fff0f6);
 }
 
 .layer3-wrapper{
-
     max-width: 1200px;
     margin: 0 auto;
-    padding: 6rem 0;
+    padding: 2rem 0;
 }
 
 .quote{
@@ -206,13 +206,38 @@ body{
     font-style: italic;
     color: #1F2937;
     white-space: pre-line;
+
+    background: linear-gradient(#ffe6f2, #fff) padding-box, linear-gradient(-90deg,#ff99cc, #ffcce6) border-box ;
+    border-radius:20px;
+    padding: 0 2rem;
+    margin: 2rem auto;
+    box-shadow: 14px 14px  rgba(253,170,180,255);
 }
 
+.quote .chibi {
+    height: auto;
+    float: right;
+    width: 200px;
+}
+
+.stamp {
+    height: auto;
+    float: left;
+    width: 100px;
+    transform: rotate(-5deg);
+}
+
+
 .author {
+    border-top: 1px solid pink;
+    margin-top:20px;
+    padding-top:10px;
     text-align: right;
-    font-size: 24px;
+    font-size: 20px;
+    font-style: italic;
     padding-right: 5px;
-    font-weight: 600;
+    font-weight: bold;
+    color:#b30059;
 }
 
 /* Layer 4 */
