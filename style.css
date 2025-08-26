@@ -90,6 +90,7 @@ body{
 .layer1Right img {
     width: 512px;
     height: auto;
+    max-width: 512px;
 }
 
 
@@ -154,6 +155,7 @@ body{
 .card img{
     width: 200px;
     height: 200px;
+    max-width: 200px;
     border-radius: 16px;
     border: 10px double #ff5ea2;
     box-shadow: 0 10px 30px black;
@@ -218,6 +220,7 @@ body{
     height: auto;
     float: right;
     width: 200px;
+    max-width: 200px;
 }
 
 .stamp {
@@ -225,6 +228,7 @@ body{
     float: left;
     width: 100px;
     transform: rotate(-5deg);
+    max-width: 100px;
 }
 
 
