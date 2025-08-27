@@ -17,6 +17,9 @@ body{
 .header a {
     text-decoration: none;
     color: white;
+    -webkit-text-stroke: 2px #b84776;
+    paint-order: stroke fill ;
+    font-style: italic;
 }
 
 .LeftContainer {
@@ -157,7 +160,7 @@ body{
     height: 200px;
     max-width: 200px;
     border-radius: 16px;
-    border: 10px double #ff5ea2;
+    border: 10px double rgba(241, 6, 127, 0.92);
     box-shadow: 0 10px 30px black;
     transition: 0.3s;
     margin: -0.5em -1em -1em -1em;
@@ -247,6 +250,7 @@ body{
 /* Layer 4 */
 .layer4{
     padding: 90px 0;
+    background-color: #f7f2b2;
 }
 
 .layer4-wrapper {
@@ -257,8 +261,11 @@ body{
     justify-content: space-around;
     align-items: center;
     gap: 32px;
-    background-color: #3882F6;
+    background-color: rgba(253,170,180,255);
     border-radius: 8px;
+
+    box-shadow: 14px 14px  rgba(241, 6, 127, 0.92);
+
 }
 
 .cta{
@@ -280,6 +287,17 @@ body{
     font-size: 24px;
     font-weight: 600;
 
+    transition: all 0.1s cubic-bezier(0.03, 0.59, 0.3, 1);
+}
+
+.SignUpBtn:hover{
+    color: white;
+    background: rgba(253,170,180,255);
+    box-shadow: 0 0px 2px 0 #f8a1c4, 0 1px 2px 0 #f8a1c4;
+    transform: scale(1.25);
+    border: 3px solid white;
+
+    transform: skewX(-15deg);
 }
 
 .footer{
