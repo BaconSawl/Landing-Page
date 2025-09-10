@@ -10,7 +10,7 @@ body{
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 5px 40px;
+    padding: 0.5rem 1.5rem;
     background-color: rgba(253,170,180,255);
 }
 
@@ -28,20 +28,20 @@ body{
 }
 
 .logo {
-    height: 52px;
+    height: 50px;
     width: auto; /* Maintain aspect ratio */
 }
 
 .RightContainer {
     display: flex;
     align-items: center;
-    font-size: 32px;
+    font-size: 1.5rem;
     font-weight: 600;
     gap: 20px;
 }
 
 .separator {
-    width: 1.5em;
+    width: 2rem;
     height: auto;
 }
 
@@ -52,7 +52,6 @@ body{
     #fff3d9 50%, #d14172 50%,
     #d14172 75%, #fff3d9 75%
   );
-
   padding: 40px;
 }
 
@@ -61,39 +60,39 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
     /* This make the element centered, especially when zoom out on browser */
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 
     background-color: rgba(255, 255, 255, 0.65);
     color: #ffffff;
-
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 10px rgba(253, 0, 0, 0.2); /* Reduced for less heavy look */
+}
+
+.layer1-container p, .layer1-container h1 {
+    -webkit-text-stroke: 2px #b84776;
+    paint-order: stroke fill ;
 }
 
 .layer1-container p{
     color:  #ffffff;
-    line-height: 1.6;
+    line-height: 1.4;
     font-style: italic;
     font-weight: bold;
-    max-width: 500px;
-    -webkit-text-stroke: 3px #b84776;
-    paint-order: stroke fill ;
+    max-width: 400px;
+    font-size: 0.9rem; /* For consistency */
 }
 
 .layer1-container h1{
-    font-size: 54px;
-    -webkit-text-stroke: 5px #b84776;
-    paint-order: stroke fill ;
-    
+    font-size: 2.5rem;
+    -webkit-text-stroke-width: 8px; /* For clarity */
 }
 
-.layer1Right img {
-    width: 512px;
+.layer1Image {
+    width: 100%; /* Make it responsive */
     height: auto;
-    max-width: 512px;
+    max-width: 400px;
 }
 
 
@@ -102,17 +101,15 @@ body{
     padding: 8px;
     width: 150px;
     background: linear-gradient(145deg,#ffd1ec, #ffe6f5);
-
     border-radius: 16px;
     font-weight: bold;
     font-size: 1.125em;
     border-color: #ce446d;
-
-
     transition: all 0.25s cubic-bezier(0.03, 0.59, 0.3, 1);;
 }
 
 .btn:hover{
+    margin: 10px; /* Make the text above it move up smoother, somehow ? */
     color: white;
     background: rgba(253,170,180,255);
     box-shadow: 0 0px 2px 0 #f8a1c4, 0 1px 2px 0 #f8a1c4;
@@ -123,8 +120,8 @@ body{
 
 /* Layer 2 */
 .layer2{
-    background-color: pink;
-    padding: 4rem 0;
+    background-color: #f0c0d3;
+    padding: 3rem 0;
 }
 .layer2-wrapper{
     max-width: 1200px;
@@ -146,8 +143,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
-    margin-top: 5rem;
+    gap: 3rem;
+    margin-top: 2rem;
 }
 
 .card {
@@ -158,12 +155,12 @@ body{
 .card img{
     width: 200px;
     height: 200px;
-    max-width: 200px;
+    max-width: 180px;
     border-radius: 16px;
     border: 10px double rgba(241, 6, 127, 0.92);
     box-shadow: 0 10px 30px black;
-    transition: 0.3s;
-    margin: -0.5em -1em -1em -1em;
+    transition: transform 0.3s ease; /* Smoother hover */
+    margin: -0.3em -0.6em -0.1em -0.em; /* Didn't know how ts works but it just works */
 
     mask: linear-gradient(-60deg, #000 50%, #0005, #000 70%) right/500% 100%;
     animation: shimmer 3s infinite;
@@ -184,7 +181,7 @@ body{
 .card p{
     text-align: center;
     color:  #ffffff;
-    line-height: 1.6;
+    line-height: 1.4;
     font-weight: bold;
     max-width: 500px;
     -webkit-text-stroke: 3px #b84776;
@@ -207,23 +204,23 @@ body{
 }
 
 .quote{
-    font-size: 36px;
+    font-size: 1.5rem;
     font-style: italic;
     color: #1F2937;
     white-space: pre-line;
 
     background: linear-gradient(#ffe6f2, #fff) padding-box, linear-gradient(-90deg,#ff99cc, #ffcce6) border-box ;
-    border-radius:20px;
+    border-radius: 15px;
     padding: 0 2rem;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     box-shadow: 14px 14px  rgba(253,170,180,255);
 }
 
 .quote .chibi {
     height: auto;
     float: right;
-    width: 200px;
-    max-width: 200px;
+    width: 100%;
+    max-width: 180px;
 }
 
 .stamp {
@@ -236,11 +233,11 @@ body{
 
 
 .author {
-    border-top: 1px solid pink;
-    margin-top:20px;
-    padding-top:10px;
+    border-top: 3px solid pink;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
     text-align: right;
-    font-size: 20px;
+    font-size: 1rem;
     font-style: italic;
     padding-right: 5px;
     font-weight: bold;
@@ -249,22 +246,22 @@ body{
 
 /* Layer 4 */
 .layer4{
-    padding: 90px 0;
+    padding: 5rem 0;
     background-color: #f7f2b2;
 }
 
 .layer4-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 3rem;
+    padding: 0.8rem 1.5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 32px;
+    gap: 1.5rem;
     background-color: rgba(253,170,180,255);
     border-radius: 8px;
 
-    box-shadow: 14px 14px  rgba(241, 6, 127, 0.92);
+    box-shadow: 10px 10px  rgba(241, 6, 127, 0.92);
 
 }
 
@@ -274,17 +271,18 @@ body{
 
 .cta h1 {
     font-weight: 900;
+    font-size: 1.5rem;
 }
 
 
 .SignUpBtn{
-    padding: 6px 28px;
+    padding: 0.4rem 1.2rem;
     background-color: transparent;
-    border-radius: 16px;
+    border-radius: 12px;
     border: 2px solid white;
 
     color: #F9FAF8;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 
     transition: all 0.1s cubic-bezier(0.03, 0.59, 0.3, 1);
@@ -292,17 +290,18 @@ body{
 
 .SignUpBtn:hover{
     color: white;
-    background: rgba(253,170,180,255);
+    background: #FFB6C1;
     box-shadow: 0 0px 2px 0 #f8a1c4, 0 1px 2px 0 #f8a1c4;
-    transform: scale(1.25);
+    transform: scale(1.1);
     border: 3px solid white;
 
-    transform: skewX(-15deg);
+    transform: skewX(-10deg);
 }
 
 .footer{
     background-color: #1F2937;
     color: #E5E7EB;
     text-align: center;
-    padding: 24px;
+    padding: 1rem;
+    font-size: 0.8rem;
 }
